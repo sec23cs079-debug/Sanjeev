@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex Rivera — Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">AR</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="resume.pdf" class="nav-resume" download>Download CV</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-left">
+      <div class="hero-tag">✦ Available for hire</div>
+      <h1>Alex<br/><em>Rivera.</em></h1>
+      <p class="hero-role">Full-Stack Developer &<br/>Creative Technologist</p>
+      <p class="hero-bio">
+        I build beautiful, functional web experiences. With 4+ years of experience crafting everything from marketing sites to complex web applications, I bring ideas to life with clean code and thoughtful design.
+      </p>
+      <div class="hero-cta">
+        <a href="#work" class="btn-main">View My Work</a>
+        <a href="#contact" class="btn-outline">Say Hello →</a>
+      </div>
+      <div class="hero-contact-row">
+        <a href="mailto:alex@example.com" class="contact-chip">✉ alex@example.com</a>
+        <a href="tel:+15551234567" class="contact-chip">📞 +1 (555) 123-4567</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="photo-wrapper">
+        <div class="photo-bg"></div>
+        <div class="photo-frame">
+          <img src="./your-photo.jpg" alt="Alex Rivera" class="photo-img">
+        </div>
+        <div class="photo-badge badge-1">React ⚛</div>
+        <div class="photo-badge badge-2">Node.js ⬡</div>
+        <div class="photo-badge badge-3">4+ Years</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-header">
+      <span class="tag">Skills</span>
+      <h2>What I work with.</h2>
+    </div>
+    <div class="skills-groups">
+      <div class="skill-group">
+        <h4>Frontend</h4>
+        <div class="skill-pills">
+          <span>HTML/CSS</span><span>JavaScript</span><span>React</span>
+          <span>TypeScript</span><span>Next.js</span><span>Tailwind</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Backend</h4>
+        <div class="skill-pills">
+          <span>Node.js</span><span>Express</span><span>PostgreSQL</span>
+          <span>MongoDB</span><span>REST APIs</span><span>GraphQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Tools</h4>
+        <div class="skill-pills">
+          <span>Git/GitHub</span><span>Figma</span><span>Docker</span>
+          <span>AWS</span><span>Vercel</span><span>Webpack</span>
+        </div>
+      </div>
+    </div>
+    <div class="proficiency">
+      <div class="prof-item">
+        <span>HTML & CSS</span>
+        <div class="bar"><div class="fill" style="width:95%"></div></div>
+        <span class="pct">95%</span>
+      </div>
+      <div class="prof-item">
+        <span>JavaScript / React</span>
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+        <span class="pct">90%</span>
+      </div>
+      <div class="prof-item">
+        <span>Node.js / Express</span>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+        <span class="pct">80%</span>
+      </div>
+      <div class="prof-item">
+        <span>UI/UX Design</span>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+        <span class="pct">75%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="portfolio" id="work">
+    <div class="section-header">
+      <span class="tag">Portfolio</span>
+      <h2>Selected projects.</h2>
+    </div>
+    <div class="projects">
+      <div class="project-card">
+        <div class="project-thumb pt-1">
+          <img src="./project-1.jpg" alt="TaskFlow project screenshot" class="project-img">
+          <span class="project-num">01</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-type">Web App</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>TaskFlow — Project Manager</h3>
+          <p>A full-stack Kanban-style project management tool with real-time collaboration, built with React, Node.js, and WebSockets.</p>
+          <div class="project-stack">
+            <span>React</span><span>Node.js</span><span>Socket.io</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#">Live Demo ↗</a>
+            <a href="#">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-thumb pt-2">
+          <img src="./project-2.jpg" alt="Verdant project screenshot" class="project-img">
+          <span class="project-num">02</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-type">E-Commerce</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>Verdant — Plant Store</h3>
+          <p>A beautifully designed e-commerce experience for an online plant store, featuring cart management, Stripe payments, and a CMS-driven product catalog.</p>
+          <div class="project-stack">
+            <span>Next.js</span><span>Stripe</span><span>Sanity</span><span>Tailwind</span>
+          </div>
+          <div class="project-links">
+            <a href="#">Live Demo ↗</a>
+            <a href="#">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-thumb pt-3">
+          <img src="./project-3.jpg" alt="Pulse analytics dashboard screenshot" class="project-img">
+          <span class="project-num">03</span>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-type">Dashboard</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3>Pulse — Analytics Dashboard</h3>
+          <p>A real-time analytics dashboard with dynamic charts, user segmentation filters, and CSV export functionality built for a SaaS startup.</p>
+          <div class="project-stack">
+            <span>React</span><span>D3.js</span><span>PostgreSQL</span><span>Express</span>
+          </div>
+          <div class="project-links">
+            <a href="#">Live Demo ↗</a>
+            <a href="#">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / RESUME HIGHLIGHTS -->
+  <section class="resume-section">
+    <div class="section-header">
+      <span class="tag">Experience</span>
+      <h2>Where I've been.</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-date">2023 – Present</span>
+          <h4>Senior Frontend Developer</h4>
+          <span class="tl-company">Nexus Digital, San Francisco</span>
+          <p>Led a team of 3 developers building and maintaining a suite of React applications serving 50K+ daily users.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-date">2021 – 2023</span>
+          <h4>Full-Stack Developer</h4>
+          <span class="tl-company">Bright Labs, Remote</span>
+          <p>Built full-stack features across 8 client projects, from fintech dashboards to consumer apps.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-date">2019 – 2021</span>
+          <h4>Junior Web Developer</h4>
+          <span class="tl-company">Sparrow Agency, New York</span>
+          <p>Developed and maintained marketing websites and landing pages for a portfolio of 30+ clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="section-header">
+        <span class="tag">Contact</span>
+        <h2>Let's work together.</h2>
+      </div>
+      <p class="contact-sub">I'm currently open to new freelance and full-time opportunities. If you have a project in mind, let's talk.</p>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="cc-icon">✉</div>
+          <h5>Email</h5>
+          <a href="mailto:alex@example.com">alex@example.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">💼</div>
+          <h5>LinkedIn</h5>
+          <a href="#">linkedin.com/in/alexrivera</a>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">🐙</div>
+          <h5>GitHub</h5>
+          <a href="#">github.com/alexrivera</a>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">📞</div>
+          <h5>Phone</h5>
+          <a href="tel:+15551234567">+1 (555) 123-4567</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span class="footer-logo">Alex Rivera</span>
+    <span class="footer-copy">© 2026 · Built with HTML & CSS</span>
+  </footer>
+
+</body>
+</html>

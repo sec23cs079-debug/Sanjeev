@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temperature Converter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-title">Utility Tool</div>
+    <h1 class="card-heading">Temperature<br/><span>Converter</span></h1>
+
+    <!-- Unit selection -->
+    <div class="unit-label">Input Unit</div>
+    <div class="unit-tabs">
+      <button class="unit-btn active" data-unit="C">
+        <span class="unit-sym">°C</span>
+        <span class="unit-name">Celsius</span>
+      </button>
+      <button class="unit-btn" data-unit="F">
+        <span class="unit-sym">°F</span>
+        <span class="unit-name">Fahrenheit</span>
+      </button>
+      <button class="unit-btn" data-unit="K">
+        <span class="unit-sym">K</span>
+        <span class="unit-name">Kelvin</span>
+      </button>
+    </div>
+
+    <!-- Input -->
+    <div class="input-label">Enter Temperature</div>
+    <div class="input-wrap">
+      <input
+        type="number"
+        id="tempInput"
+        class="temp-input"
+        placeholder="0"
+        step="any"
+        aria-label="Temperature value"
+      />
+      <span class="input-unit C" id="inputUnit">°C</span>
+    </div>
+    <div class="error-msg" id="errorMsg" role="alert"></div>
+
+    <!-- Convert button -->
+    <button class="btn-convert" id="convertBtn">
+      Convert Temperature
+    </button>
+
+    <!-- Result -->
+    <div class="result-area" id="resultArea">
+      <div class="result-placeholder" id="resultPlaceholder">
+        <span class="arrow">↕</span>
+        Enter a value and hit Convert
+      </div>
+    </div>
+
+    <!-- Formula note -->
+    <div class="formula-note" id="formulaNote"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
